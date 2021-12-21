@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Play&family=Roboto&display=swap');
+:root{
+    --font: 'Nunito', sans-serif;
+    --primaryColor: #9769F9;
+    --headingSize: 122px;
+    --headingColor: #101010;
+}
+
+.flexContainer{
+    display: flex;
+    
+}
+.gridContainer{
+    display: grid;
+    grid-template-areas: "c c1";
+    grid-template-rows: auto;
+    grid-template-columns: 50vw 30vw;
+    
+}
+
+.head{
+    margin-top: 6.5%;
+    margin-left: 4%;
+    /* background-color: red; */
+    grid-area: c;
+}
+
+.heading{
+    font-family: var(--font);
+    font-size: var(--headingSize);
+    color: var(--headingColor);
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.heading__highlight{
+    color: var(--primaryColor);
+    
+}
+
+.subHeading{
+    display: block;
+    font-family: var(--font);
+    color: var(--headingColor);
+    font-size: 70px;
+    
+}
+
+.srcBtn{
+    border: 2px solid #9769F9;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.25));
+    border-radius: 5px;     
+    height: 2.5rem;
+    width: 15rem;
+    color: var(--primaryColor);
+    margin-top: 6rem;
+    background-color: white;
+}
+
+.srcBtn:hover{
+    background-color: var(--primaryColor);
+    color: white;
+}
+
+.image{
+    grid-area: c1;
+    margin-top: 10rem;
+    width: 32rem;
+    
+}
+
+.scrollSidebar{
+    
+    margin-left: 8rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.btn1{
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+    width: 10rem;
+    height: 2.5rem;
+    color: var(--primaryColor);
+    border: 2px solid #9769F9;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 5px;
+}
+.btn1:hover{
+    background-color: var(--primaryColor);
+    color: white;
+}
+
+.btn{
+    margin-top: 2rem;
+    width: 10rem;
+    height: 2.5rem;
+    color: var(--primaryColor);
+    border: 2px solid #9769F9;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: var(--primaryColor);
+    color: white;
+}
+
+.headLinks{
+    font-family: var(--font);
+    margin-top: 13rem;
+    margin-bottom: 0rem;
+    font-size: 2rem;
+}
+
+.link{
+    display: flex;
+    margin: 0rem;
+}
+.picLink{
+    flex-direction: row;
+    margin: 1rem 0.5rem 0rem 0rem;
+    
+}
+
+#github{
+    width: 3rem;
+    height: 3rem;
+    background: url("images\\github.png") no-repeat; 
+}
+#github:hover{
+    background: url("images\\github purple.png") no-repeat;
+    
+}
+#devto{
+    width: 3rem;
+    height: 3rem;
+    background: url("images\\DEV.png") no-repeat; 
+}
+#devto:hover{
+    background: url("images\\dev purple.png") no-repeat;
+    
+}
+#linkedIn{
+    width: 3rem;
+    height: 3rem;
+    background: url("images\\linkedIn.png") no-repeat; 
+}
+#linkedIn:hover{
+    background: url("images\\linkedIn purple.png") no-repeat;
+    
+}
+#twitter{
+    width: 3rem;
+    height: 3rem;
+    background: url("images\\twitter.png") no-repeat; 
+}
+#twitter:hover{
+    background: url("images\\twitter purple.png") no-repeat;
+    
+}
