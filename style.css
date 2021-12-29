@@ -10,18 +10,20 @@
     display: flex;
     
 }
+#id{
+    z-index: 1;
+}
 .gridContainer{
     display: grid;
     grid-template-areas: "c c1";
     grid-template-rows: auto;
     grid-template-columns: 50vw 30vw;
-    
+    margin-bottom: 14rem;
 }
 
 .head{
     margin-top: 6.5%;
     margin-left: 4%;
-    /* background-color: red; */
     grid-area: c;
 }
 
@@ -55,6 +57,7 @@
     width: 15rem;
     color: var(--primaryColor);
     margin-top: 6rem;
+    
     background-color: white;
 }
 
@@ -71,11 +74,12 @@
 }
 
 .scrollSidebar{
-    
+   
     margin-left: 8rem;
     display: flex;
     flex-direction: column;
-    
+    position: fixed;
+    right: 2px;
 }
 
 .btn1{
@@ -111,10 +115,12 @@
 }
 
 .headLinks{
+    
     font-family: var(--font);
-    margin-top: 13rem;
+    margin-top: 18rem;
     margin-bottom: 0rem;
     font-size: 2rem;
+    
 }
 
 .link{
@@ -123,8 +129,7 @@
 }
 .picLink{
     flex-direction: row;
-    margin: 1rem 0.5rem 0rem 0rem;
-    
+    margin: 1rem 0.5rem 0rem 0rem;  
 }
 
 #github{
@@ -136,6 +141,7 @@
     background: url("images\\github purple.png") no-repeat;
     
 }
+
 #devto{
     width: 3rem;
     height: 3rem;
@@ -145,6 +151,7 @@
     background: url("images\\dev purple.png") no-repeat;
     
 }
+
 #linkedIn{
     width: 3rem;
     height: 3rem;
@@ -154,6 +161,7 @@
     background: url("images\\linkedIn purple.png") no-repeat;
     
 }
+
 #twitter{
     width: 3rem;
     height: 3rem;
@@ -163,3 +171,92 @@
     background: url("images\\twitter purple.png") no-repeat;
     
 }
+
+.skills{
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.skillsImage{
+    grid-area: c1;
+    margin: 16rem 0rem 0rem 12rem;
+    width: 20rem;
+    
+}
+
+#skills{
+    z-index: 2;
+}
+
+.htmlBubble{
+    display: inline-block;
+    width: 6.8rem;
+    height: 6.5rem;
+    background-image: url("images\\html bubble.png");
+    grid-area: c1;
+    margin: 11rem 0rem 0rem 5rem;
+}
+
+.htmlBubble__heading{
+    margin: 2.5rem 0rem 0rem 1.5rem;
+    grid-area: c1;
+    color: var(--primaryColor);
+}
+
+.cssBubble{
+    display: inline-block;
+    width: 6.5rem;
+    height: 6.5rem;
+    background-image: url("images\\css bubble.png");
+    grid-area: c1;
+    margin: 8rem 0rem 0rem 13rem;
+}
+
+.cssBubble__heading{
+    margin: 2.5rem 0rem 0rem 1.5rem;
+    grid-area: c1;
+    color: var(--primaryColor);
+}
+
+.jsBubble{
+    display: inline-block;
+    width: 6.9rem;
+    height: 6.5rem;
+    background-image: url("images\\js bubble.png");
+    grid-area: c1;
+    margin: 9.4rem 0rem 0rem 23rem;
+}
+
+.jsBubble__heading{
+    margin: 2.5rem 0rem 0rem 0.8rem;
+    grid-area: c1;
+    color: var(--primaryColor);
+}
+
+.ReactJsBubble{
+    display: inline-block;
+    width: 6.6rem;
+    height: 6.5rem;
+    background-image: url("images\\reactjs bubble.png");
+    grid-area: c1;
+    margin: 14.4rem 0rem 0rem 32rem;
+}
+.ReactJsBubble:hover {
+    display: inline-block;
+    width: 10.2rem;
+    height: 10.3rem;
+    background-image: url("images\\new react.png");
+    
+    grid-area: c1;
+    margin: 12.4rem 0rem 0rem 31rem;
+}
+
+.ReactJsBubble__heading{
+    margin: 2.5rem 0rem 0rem 0.8rem;
+    grid-area: c1;
+    color: red
+}
+
+
+
