@@ -197,6 +197,14 @@
     grid-area: c1;
     margin: 11rem 0rem 0rem 5rem;
 }
+.htmlBubble:hover{
+    display: inline-block;
+    width: 7.4rem;
+    height: 7rem;
+    background-image: url("images\\html logo.png");
+    grid-area: c1;
+    margin: 11rem 0rem 0rem 4rem;
+}
 
 .htmlBubble__heading{
     margin: 2.5rem 0rem 0rem 1.5rem;
@@ -206,11 +214,20 @@
 
 .cssBubble{
     display: inline-block;
-    width: 6.5rem;
-    height: 6.5rem;
+    width: 8.5rem;
+    height: 8.5rem;
     background-image: url("images\\css bubble.png");
     grid-area: c1;
-    margin: 8rem 0rem 0rem 13rem;
+    margin: 7.5rem 0rem 0rem 11.5rem;
+}
+
+.cssBubble:hover{
+    display: inline-block;
+    width: 8.5rem;
+    height: 8.5rem;
+    background-image: url("images\\css logo.png");
+    grid-area: c1;
+    margin: 7rem 0rem 0rem 11rem;
 }
 
 .cssBubble__heading{
@@ -225,7 +242,16 @@
     height: 6.5rem;
     background-image: url("images\\js bubble.png");
     grid-area: c1;
-    margin: 9.4rem 0rem 0rem 23rem;
+    margin: 9rem 0rem 0rem 23rem;
+}
+
+.jsBubble:hover{
+    display: inline-block;
+    width: 7.5rem;
+    height: 7rem;
+    background-image: url("images\\js logo.png");
+    grid-area: c1;
+    margin: 8.5rem 0rem 0rem 23rem;
 }
 
 .jsBubble__heading{
@@ -236,18 +262,17 @@
 
 .ReactJsBubble{
     display: inline-block;
-    width: 6.6rem;
-    height: 6.5rem;
+    width: 10.2rem;
+    height: 10rem;
     background-image: url("images\\reactjs bubble.png");
     grid-area: c1;
-    margin: 14.4rem 0rem 0rem 32rem;
+    margin: 12.4rem 0rem 0rem 31rem;
 }
 .ReactJsBubble:hover {
     display: inline-block;
     width: 10.2rem;
     height: 10.3rem;
     background-image: url("images\\new react.png");
-    
     grid-area: c1;
     margin: 12.4rem 0rem 0rem 31rem;
 }
@@ -255,8 +280,7 @@
 .ReactJsBubble__heading{
     margin: 2.5rem 0rem 0rem 0.8rem;
     grid-area: c1;
-    color: red
+    color: var(--primaryColor);
 }
-
 
 
