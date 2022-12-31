@@ -1,7 +1,22 @@
+import axios, { Axios } from 'axios';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './style.css';
 
 function App() {
+    useEffect( ()=>{
+        (async ()=>{
+
+            try {
+                const response= await axios.get("https://portfolio.aashishsethii01.repl.co/")
+                console.log("api response",response);
+                
+            } catch (error) {
+                console.error("axios error",error);
+            }
+            
+        })()
+    },[])
   return (
     <div className="App">
      
