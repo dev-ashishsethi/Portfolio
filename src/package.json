@@ -1,0 +1,19 @@
+{
+  "name": "mark-3-5-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-ashishsethi/mark-3-5-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dev-ashishsethi/mark-3-5-portfolio/issues"
+  },
+  "homepage": "https://github.com/dev-ashishsethi/mark-3-5-portfolio#readme"
+}
