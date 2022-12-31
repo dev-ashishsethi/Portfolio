@@ -1,34 +1,46 @@
-import { Link } from "react-router-dom";
+import axios from "axios"
+import { useEffect, useState } from "react"
 
 export function Blogs() {
+  const [data,setData]=useState({})
+    useEffect( ()=>{
+        (async ()=>{
+            try {
+                const response= await axios.get("https://portfolio.aashishsethii01.repl.co/Blogs")
+                setData(response.data)
+            } catch (error) {
+                console.error("axios error",error);
+            }
+        })()
+    },[])
     return (
       <>
-          <header class='hero'>
-    <h1 class='hero-heading'>Read my <span class='heading-inverted'>blogs</span></h1>
-  </header>
+        <header class='hero'>
+         <h1 class='hero-heading'>Read my <span class='heading-inverted'>blogs</span></h1>
+        </header>
 
   <ul class="list-non-bullet">
     <li>
       <article class="showcase-list container container-center">
-        <h1>What is CSS box model?</h1>
-        <small>20 November, 2021</small>
+        <h1>{data?.first?.heading}</h1>
+        <small>{data?.first?.date}</small>
         <p>
-          While writing CSS it can be really tough to understand why that element in your html is not aligning as per your expections. This blog can help you understand CSS box modeling and make your CSS development easier.
+          {data?.first?.description}
         </p>
 
-        <a class="link link-primary" href="https://dev.to/devashishsethi/what-is-css-box-model-2214" target='_blank' rel='noopener'>Read More</a>
+        <a class="link link-primary" href={data?.first?.liveLink} target='_blank' rel='noopener'>Read More</a>
       </article>
     </li>
 
     <li>
       <article class="showcase-list container container-center ow">
-        <h1>How to use Margin in CSS?</h1>
-        <small>20 November, 2021</small>
+        <h1>{data?.second?.heading}</h1>
+        <small>{data?.second?.date}</small>
         <p>
-          It can get a bit confusing to understand the shorthand method of writing margin measurements in your CSS file. This blog can help you understand and make it easier for you to use margin in shorthand.
+        {data?.second?.description}
         </p>
 
-        <a class="link link-primary" href='https://dev.to/devashishsethi/how-to-use-margin-in-css-501i' target='_blank' rel='noopener'>Read More</a>
+        <a class="link link-primary" href={data?.second?.liveLink} target='_blank' rel='noopener'>Read More</a>
       </article>
     </li>
   </ul>
